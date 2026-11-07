@@ -1,173 +1,161 @@
-# bootstrap-kemenkes-theme (unofficial)
+<div align="center">
 
-Tema **Bootstrap 5** bergaya visual 2024 (palet teal–lime, tabel bergaris, kartu KPI,
-sidebar, callout, badge status) untuk dashboard/aplikasi.
+# Bootstrap Kemenkes Theme
 
-> **Unofficial.** Proyek ini **bukan** produk resmi dan tidak berafiliasi/endorsed oleh
-> Kementerian Kesehatan RI. Paket ini **tidak** memuat logo resmi, supergrafis, atau file
-> font komersial (VAG Rounded). Palet warna dan tata letak adalah karya orisinal.
+**Tema Bootstrap 5 (unofficial) dengan palet & visual Kemenkes 2024** — siap pakai untuk dashboard, aplikasi internal, dan prototipe.
 
-## Fitur
+[![License](https://img.shields.io/badge/license-MIT-06b2bb?style=flat-square)](LICENSE)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![Version](https://img.shields.io/badge/version-1.0.0-087b6d?style=flat-square)](CHANGELOG.md)
+[![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-d2db2f?style=flat-square)](https://etriowidodo.github.io/bootstrap-kemenkes-theme/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-16ae97?style=flat-square)](#kontribusi)
+[![Unofficial](https://img.shields.io/badge/status-unofficial-62625e?style=flat-square)](#disclaimer)
 
-- Token warna & tipografi lewat CSS custom properties (mudah di-override).
-- Override langsung ke variabel Bootstrap 5 (`--bs-primary`, `--bs-*`).
-- Komponen: navbar, sidebar, kartu, KPI card (dengan ikon), tabel bergaris, badge status, callout, form, progress, pagination.
-- Contoh galeri ikon (`examples/icons.html`).
-- Logo & supergrafis (`examples/logo.html`) dan font picker (`examples/font-picker.html`).
-- Kitchen-sink komponen (`examples/components.html`): tombol, form, tab, modal, offcanvas, toast, timeline, skeleton, dll.
-- **Buttons** (`examples/buttons.html`): solid/outline/soft, ukuran, ikon, group — warna base palette.
-- Helper JS (`js/bootstrap-kemenkes.js`): font picker, toast, copy CSS.
-- **Data table** (`examples/data-table.html`): sortir kolom, pencarian, pagination.
-- **Form wizard** (`examples/wizard.html`): langkah bertahap + progres.
-- **Chart ringan** (`examples/charts.html`): sparkline (SVG) & bar chart (CSS).
-- **Card + Ikon** (`examples/cards-icons.html`): variasi kartu + 308 ikon dengan warna dari base palette.
-- Dua cara pakai: **CDN override** (tanpa build) atau **build SCSS** (Bootstrap dibundel).
+[**Live Demo**](https://etriowidodo.github.io/bootstrap-kemenkes-theme/) ·
+[**Komponen**](https://etriowidodo.github.io/bootstrap-kemenkes-theme/examples/components.html) ·
+[**Dashboard**](https://etriowidodo.github.io/bootstrap-kemenkes-theme/examples/dashboard.html) ·
+[**Changelog**](CHANGELOG.md)
 
-## Mulai cepat (tanpa build)
+![Demo](docs/demo.gif)
 
-Muat Bootstrap 5 lalu stylesheet tema ini:
+</div>
+
+---
+
+## ✨ Fitur
+
+- **Palet resmi Kemenkes 2024** — teal, lime, hijau, oranye, merah, abu (token CSS).
+- **Bootstrap 5 override** — cukup load setelah Bootstrap, tanpa build.
+- **30 halaman contoh** — patterns, komponen, dashboard, monitoring anggaran.
+- **Komponen lengkap** — navbar, sidebar, KPI card, tabel, badge status, callout, form, modal, offcanvas, toast, timeline, skeleton, data table, wizard, chart ringan.
+- **Font Picker** — pilih heading/body, ukuran, radius; simpan di localStorage, salin CSS.
+- **Card + Ikon** & **Buttons** untuk seluruh base color.
+- **Ikon**: 208 ikon default + 31 kurasi + 308 hasil ekstraksi (varian putih).
+- **Logo & supergrafis** resmi untuk standarisasi internal.
+- **Aksesibilitas**: skip-link, `:focus-visible`, `lang="id"`, tabel responsif.
+- **GitHub Pages** siap deploy (workflow disertakan).
+
+## 🚀 Mulai cepat
+
+### Opsi 1 — CDN (tanpa build)
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="dist/bootstrap-kemenkes.css" rel="stylesheet">
-```
-
-Lihat `examples/index.html` (komponen) dan `examples/dashboard.html` (layout dashboard).
-
-## Helper JS
-
-```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/bootstrap-kemenkes.js"></script>
-<script>
-  KmkTheme.toast("Tersimpan");        // notifikasi
-  KmkTheme.copy(":root{...}");        // salin teks
-  KmkTheme.applyFonts({ size: 15, radius: 10 }); // ubah preferensi
-</script>
 ```
 
-Halaman dengan `[data-kmk-font-picker]` otomatis mengaktifkan font picker (tersimpan di localStorage).
-
-## Build penuh (SCSS)
+### Opsi 2 — Build
 
 ```bash
 npm install
-npm run build
-# hasil: dist/bootstrap-kemenkes.full.css (Bootstrap + tema dalam satu file)
+npm run build     # dist/bootstrap-kemenkes.full.css (Bootstrap + tema)
 ```
 
-## Token warna
+### Contoh pemakaian
 
-Palet resmi Kemenkes 2024 (ekuivalen RGB dari set CMYK brand):
+```html
+<button class="btn btn-primary">Simpan</button>
+
+<div class="kmk-kpi is-lime">
+  <div class="kmk-kpi-label">Terukur</div>
+  <div class="kmk-kpi-value">38</div>
+  <div class="kmk-kpi-sub">90,5% dari total</div>
+</div>
+```
+
+## 🧩 Halaman & komponen
+
+| Kategori | Halaman |
+|---|---|
+| **Patterns** | Headers · Heroes · Features · Sidebars |
+| **Custom** | Album · Pricing · Checkout · Product · Cover · Carousel · Blog · Sign-in |
+| **Framework** | Starter · Jumbotron · Sticky footer · Navbars |
+| **Komponen** | Kitchen Sink · Buttons · Card + Ikon · Data Table · Form Wizard · Chart |
+| **Panduan** | Font Picker · Logo & Supergrafis · Ikon |
+| **Dashboard** | Dashboard · Monitoring Anggaran (clone publik) |
+
+## 📸 Screenshot
+
+| | |
+|---|---|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Komponen](docs/screenshots/components.png) |
+| ![Buttons](docs/screenshots/buttons.png) | ![Card + Ikon](docs/screenshots/cards-icons.png) |
+| ![Font Picker](docs/screenshots/font-picker.png) | ![Data Table](docs/screenshots/data-table.png) |
+| ![Ikon](docs/screenshots/icons.png) | ![Logo](docs/screenshots/logo.png) |
+
+## 🎨 Palet
 
 | Token | HEX | Pemakaian |
 |---|---|---|
 | `--kmk-teal` | `#06B2BB` | Aksen utama, tombol primary |
-| `--kmk-teal-cyan` | `#00D0D7` | Aksen terang/highlight |
-| `--kmk-teal-dark` | `#087B6D` | Link, heading, teks di atas lime |
+| `--kmk-teal-cyan` | `#00D0D7` | Aksen terang |
+| `--kmk-teal-dark` | `#087B6D` | Link, heading |
 | `--kmk-teal-deep` | `#007276` | Panel/teks tebal |
 | `--kmk-teal-light` | `#16AE97` | Success/aksen |
 | `--kmk-green-leaf` | `#43B077` | Hijau pendukung |
 | `--kmk-lime` | `#D2DB2F` | Header tabel, highlight |
 | `--kmk-olive` | `#C3B82B` | Lime gelap |
 | `--kmk-lime-soft` | `#F4F7C2` | Latar kartu/callout |
-| `--kmk-orange` | `#E3862D` | Peringatan/aksen |
-| `--kmk-red` | `#C00000` | Error/hapus, status kritis |
+| `--kmk-orange` | `#E3862D` | Peringatan |
+| `--kmk-red` | `#C00000` | Error/status kritis |
 | `--kmk-gray` | `#696A69` | Body text |
-| `--kmk-gray-soft` | `#898983` | Caption/muted |
-| `--kmk-gray-dark` | `#62625E` | Teks netral gelap |
-| `--kmk-gray-light` | `#BFBFBF` | Garis/sekunder netral |
-| `--kmk-pale-teal` | `#C7EDEB` | Latar kartu/callout |
-| `--kmk-canvas` | `#F2F2F2` | Zebra tabel |
-| `--kmk-line` | `#D9DDDB` | Border |
+| `--kmk-pale-teal` | `#C7EDEB` | Latar lembut |
 
-## Tipografi
+## 🔤 Tipografi
 
-- Heading: `"VAG Rounded"`, fallback `"Quicksand"` (SIL OFL) / `"Varela Round"` / system.
-- Body: `"Segoe UI Brand"`, fallback `"Segoe UI"` / `system-ui`.
+- Heading: **VAG Rounded**, fallback Quicksand / system.
+- Body: **Segoe UI** / system.
+- Font picker tersedia di [`examples/font-picker.html`](examples/font-picker.html).
 
-`dist/bootstrap-kemenkes.css` mendeklarasikan `@font-face` yang menunjuk ke
-`assets/fonts/vagrounded-bold.ttf` dan `assets/fonts/segoeui.ttf`.
-
-File font disertakan di `assets/fonts/` (`vagrounded-bold.ttf`, `segoeui.ttf`). Bila file
-tidak tersedia, browser otomatis memakai fallback Quicksand/system.
-
-## Kebijakan aset brand
-
-Paket ini sengaja **tidak** memuat:
-
-- Logo/supergrafis resmi Kementerian Kesehatan — gunakan `assets/logo-placeholder.svg`
-  atau logo milik Anda sendiri.
-- Font VAG Rounded / Segoe UI Brand (`assets/fonts/`).
-- Logo & supergrafis resmi (`assets/logo-kemenkes/`).
-- Ikon default dashboard (`assets/ep-brand/icons/`, 208 ikon).
-
-Semua aset tersebut disertakan untuk keperluan internal/standarisasi. Hak atas logo,
-supergrafis, dan font tetap milik pemiliknya.
-
-Jika Anda perlu memakai aset resmi, urus izin ke pemilik aset. Warna dan komponen CSS
-bebas dipakai di bawah lisensi MIT.
-
-## Struktur
+## 📁 Struktur
 
 ```
 bootstrap-kemenkes-theme/
-├─ assets/logo-placeholder.svg
-├─ assets/fonts/                    # VAG Rounded + Segoe UI
-├─ assets/logo-kemenkes/            # logo & supergrafis resmi
-├─ assets/ep-brand/icons/           # 208 ikon default dashboard
-├─ assets/icons/ + icons-white/     # ikon kurasi + hasil ekstraksi
-├─ js/bootstrap-kemenkes.js          # helper (font picker, toast, copy, datatable, wizard, chart)
-├─ examples/_pub/                   # CSS dashboard publik
-├─ dist/bootstrap-kemenkes.css      # override-only (pakai setelah Bootstrap CDN)
-├─ js/bootstrap-kemenkes.js          # helper (font picker, toast, copy, datatable, wizard, chart)
-├─ examples/
-│  ├─ index.html                    # galeri komponen
-│  ├─ dashboard.html                # contoh layout dashboard
-│  ├─ renggar.html                  # contoh statis Dashboard Publik
-│  ├─ renggar-anggaran.html         # contoh statis Monitoring Anggaran
-
-├─ scss/
-│  ├─ _tokens.scss
-│  ├─ _components.scss
-│  └─ bootstrap-kemenkes.scss
-├─ LICENSE
+├─ dist/                 # override-only + full build
+├─ scss/                 # tokens & components (source)
+├─ js/                   # helper (font picker, table, wizard, chart, toast)
+├─ examples/             # 30 halaman contoh
+├─ assets/               # logo, ikon, font
+├─ scripts/check-links.mjs
+├─ .github/workflows/pages.yml
+├─ CHANGELOG.md
+├─ LICENSE (MIT)
 └─ package.json
 ```
 
-## Lisensi
+## 🛠 Scripts
 
-MIT — lihat [LICENSE](LICENSE). Berlaku untuk kode CSS/HTML/SCSS. Aset pihak ketiga
-(logo/font) tidak termasuk dan tetap milik pemiliknya.
+| Perintah | Fungsi |
+|---|---|
+| `npm run build` | Build `dist/bootstrap-kemenkes.full.css` |
+| `npm run check` | Validasi link/aset lokal (30 halaman) |
+| `npm run serve` | Jalankan demo lokal |
 
-## Kontribusi
+## 🌐 Deployment
 
-Issue dan PR terbuka. Mohon jangan mengirim logo resmi atau file font berbayar ke repo ini.
+Workflow `.github/workflows/pages.yml` men-deploy ke GitHub Pages pada push ke `main`.
+Aktifkan **Settings → Pages → Source: GitHub Actions**. Demo:
+`https://etriowidodo.github.io/bootstrap-kemenkes-theme/`
 
+## ⚠️ Disclaimer
 
-## Development
+Proyek ini **unofficial** dan **tidak berafiliasi/endorsed** oleh Kementerian Kesehatan RI.
+Logo, supergrafis, dan font resmi adalah milik pemiliknya dan disertakan untuk keperluan
+internal/standarisasi. Untuk repo publik, sesuaikan perizinan aset brand terlebih dahulu.
 
-```bash
-npm install
-npm run build     # dist/bootstrap-kemenkes.full.css (Bootstrap + tema)
-npm run check     # validasi semua link/aset lokal
-npm run serve     # demo: http://localhost:3000/examples/index.html
-```
+## 🤝 Kontribusi
 
-## Deployment (GitHub Pages)
+Issue & PR terbuka. Mohon tidak mengirim kredensial, data internal, atau aset brand tanpa izin.
 
-Repo ini menyertakan workflow `.github/workflows/pages.yml`. Push ke branch `main`,
-lalu aktifkan Pages (Source: GitHub Actions). Demo tersedia di
-`https://<user>.github.io/<repo>/examples/index.html`.
+## 📄 Lisensi
 
-## Browser support
+Kode CSS/HTML/JS: **MIT** — lihat [LICENSE](LICENSE).
+Aset brand (logo/supergrafis/font) tidak tercakup lisensi MIT.
 
-Browser modern (Chrome/Edge/Safari/Firefox terbaru). CSS memakai `color-mix()`
-dan `:focus-visible`; browser lama otomatis fallback ke warna dasar.
+<div align="center">
 
-## Changelog
+**Kalau repo ini bermanfaat, beri ⭐ agar makin banyak yang menemukannya.**
 
-Lihat [CHANGELOG.md](CHANGELOG.md).
-
-## Aksesibilitas
-
-Skip-link ke konten, focus ring `:focus-visible`, `lang="id"`, dan tabel responsif.
+</div>
