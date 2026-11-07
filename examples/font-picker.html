@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Font Picker — bootstrap-kemenkes-theme</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo-kemenkes/favicon-32.png?v=3">
+  <link rel="icon" type="image/png" sizes="256x256" href="../assets/logo-kemenkes/favicon-256.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo-kemenkes/favicon-180.png?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Varela+Round&family=Nunito:wght@400;600;700&family=Fredoka:wght@400;600&family=Inter:wght@400;600&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../dist/bootstrap-kemenkes.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+
+<nav class="navbar navbar-expand-lg kmk-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../assets/logo-kemenkes/logo-horizontal-color-trim.png" alt="Kementerian Kesehatan" style="height:40px;width:auto">
+      <span class="kmk-brand-divider"></span>
+      <span class="kmk-brand-text"><strong>Kemenkes Theme</strong><small>Bootstrap 5 · Kementerian Kesehatan RI</small></span>
+    </a>
+    <span class="kmk-public-badge d-none d-lg-inline-flex">Unofficial · MIT</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kmknav" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="kmknav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="showcase.html">Contoh</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Komponen</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="components.html">Kitchen Sink</a></li>
+            <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+            <li><a class="dropdown-item" href="cards-icons.html">Card + Ikon</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="data-table.html">Data Table</a></li>
+            <li><a class="dropdown-item" href="wizard.html">Form Wizard</a></li>
+            <li><a class="dropdown-item" href="charts.html">Chart</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Panduan</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="font-picker.html">Font Picker</a></li>
+            <li><a class="dropdown-item" href="logo.html">Logo &amp; Supergrafis</a></li>
+            <li><a class="dropdown-item" href="icons.html">Ikon</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-4 bg-kmk-soft">
+  <div class="container">
+    <h1 class="h3 mb-1">Font Picker</h1>
+    <p class="mb-0 text-kmk-gray">Pilih heading/body, ukuran, dan radius. Pengaturan tersimpan di browser dan bisa disalin sebagai CSS.</p>
+  </div>
+</header>
+
+<main id="main" class="container py-4">
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <form class="card p-4" data-kmk-font-picker>
+        <div class="mb-3">
+          <label class="form-label" for="fp-heading">Font heading</label>
+          <select class="form-select" id="fp-heading" data-kmk-key="heading">
+            <option value="'VAG Rounded', 'Quicksand', system-ui, sans-serif">VAG Rounded (lokal)</option>
+            <option value="'Quicksand', system-ui, sans-serif">Quicksand</option>
+            <option value="'Varela Round', system-ui, sans-serif">Varela Round</option>
+            <option value="'Nunito', system-ui, sans-serif">Nunito</option>
+            <option value="'Fredoka', system-ui, sans-serif">Fredoka</option>
+            <option value="'Segoe UI', system-ui, sans-serif">Segoe UI</option>
+            <option value="system-ui, -apple-system, sans-serif">System UI</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="fp-body">Font body</label>
+          <select class="form-select" id="fp-body" data-kmk-key="body">
+            <option value="'Segoe UI', 'Segoe UI Brand', system-ui, sans-serif">Segoe UI</option>
+            <option value="'Inter', system-ui, sans-serif">Inter</option>
+            <option value="'Nunito Sans', system-ui, sans-serif">Nunito Sans</option>
+            <option value="system-ui, -apple-system, sans-serif">System UI</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="fp-size">Ukuran dasar <span class="text-kmk-gray fw-normal">(<span data-kmk-out="size">16px</span>)</span></label>
+          <input class="form-range" id="fp-size" type="range" min="14" max="20" step="1" data-kmk-key="size">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="fp-radius">Radius sudut <span class="text-kmk-gray fw-normal">(<span data-kmk-out="radius">14px</span>)</span></label>
+          <input class="form-range" id="fp-radius" type="range" min="0" max="20" step="1" data-kmk-key="radius">
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary" type="button" data-kmk-copy>Salin CSS</button>
+          <button class="btn btn-outline-primary" type="button" data-kmk-reset>Reset</button>
+        </div>
+        <div class="small text-kmk-gray mt-3" data-kmk-name></div>
+      </form>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Pratinjau</span>
+          <span class="kmk-badge">live</span>
+        </div>
+        <div class="card-body kmk-font-preview">
+          <div class="display-6 mb-2">Dashboard Monitoring Evaluasi Kinerja</div>
+          <div class="h4 mb-3">Capaian Indikator per Unit Utama</div>
+          <p class="kmk-fp-body mb-4">Kementerian Kesehatan RI · Biro Perencanaan dan Anggaran. Teks contoh ini memakai font body yang dipilih; judul memakai font heading. Ukuran dasar memengaruhi seluruh skala <code>rem</code>.</p>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4"><div class="kmk-kpi"><div class="kmk-kpi-label">Indikator</div><div class="kmk-kpi-value">42</div><div class="kmk-kpi-sub">tahun berjalan</div></div></div>
+            <div class="col-md-4"><div class="kmk-kpi is-lime"><div class="kmk-kpi-label">Terukur</div><div class="kmk-kpi-value">38</div><div class="kmk-kpi-sub">90,5%</div></div></div>
+            <div class="col-md-4"><div class="kmk-kpi is-warning"><div class="kmk-kpi-label">Capaian</div><div class="kmk-kpi-value">86,2%</div><div class="kmk-kpi-sub">rata-rata</div></div></div>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-primary" type="button">Simpan</button>
+            <button class="btn btn-outline-primary" type="button">Batal</button>
+            <button class="btn btn-lime" type="button">Unduh</button>
+            <span class="kmk-badge is-ach">Tercapai</span>
+            <span class="kmk-badge is-proc">Dalam Proses</span>
+            <span class="kmk-badge is-miss">Belum Tercapai</span>
+          </div>
+          <div class="table-responsive border rounded-3">
+            <table class="table kmk-table">
+              <thead><tr><th>Unit</th><th class="is-num">Capaian</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Sekretariat Jenderal</td><td class="is-num">92,1%</td><td><span class="kmk-badge is-ach">Tercapai</span></td></tr>
+                <tr><td>Ditjen Farmalkes</td><td class="is-num">64,8%</td><td><span class="kmk-badge is-miss">Belum Tercapai</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">CSS yang dihasilkan</div>
+        <div class="card-body p-0"><pre class="kmk-code m-0" data-kmk-css></pre></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="kmk-footer py-4 mt-4">
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>bootstrap-kemenkes-theme — unofficial</span>
+    <span>Font picker menyimpan preferensi di localStorage</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-kemenkes.js"></script>
+</body>
+</html>

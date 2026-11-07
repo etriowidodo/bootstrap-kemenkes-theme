@@ -1,0 +1,152 @@
+.pub-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pub-filter-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  min-width: 0;
+}
+
+.pub-filter-card.is-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--green-soft);
+  border-color: #c9ebe4;
+}
+
+.pub-filter-card.is-info svg {
+  width: 22px;
+  height: 22px;
+  color: var(--teal-dark);
+  flex: 0 0 22px;
+}
+
+.pub-filter-card.is-info span {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--teal-deep);
+  font-weight: 600;
+}
+
+.pub-filter-label {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.pub-select {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.pub-filter-static {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--teal-dark);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.pub-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.pub-btn:hover {
+  background: var(--green-soft);
+  border-color: #bfe6df;
+}
+
+.pub-btn.is-primary {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--white);
+}
+
+.pub-btn.is-primary:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+}
+
+.pub-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--teal-dark);
+}
+
+.pub-back svg {
+  width: 15px;
+  height: 15px;
+}
+
+.pub-source {
+  margin-top: 12px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.pub-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 30px;
+  padding: 18px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.pub-footer strong {
+  color: var(--teal-dark);
+}
+
+.pub-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

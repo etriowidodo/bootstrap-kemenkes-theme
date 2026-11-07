@@ -1,0 +1,171 @@
+@media (max-width: 1180px) {
+  .pub-header-inner {
+    gap: 14px;
+  }
+
+  .pub-brand-text strong {
+    font-size: 16px;
+  }
+
+  .pub-nav a {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .pub-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-public-badge {
+    order: 3;
+    margin-left: auto;
+  }
+
+  .pub-nav {
+    order: 4;
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .pub-header-inner {
+    padding: 12px 18px;
+  }
+
+  .pub-public-badge {
+    order: 3;
+  }
+
+  .pub-nav {
+    order: 4;
+    width: 100%;
+    margin-left: 0;
+    justify-content: stretch;
+  }
+
+  .pub-nav a {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .pub-shell {
+    padding: 0 18px 34px;
+  }
+
+  .pub-filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pub-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pub-tree-row {
+    grid-template-columns: minmax(150px, 1.2fr) minmax(80px, 1.5fr) 54px;
+    gap: 10px;
+  }
+
+  .pub-card-head {
+    padding: 16px;
+  }
+
+  .pub-card-body {
+    padding: 14px 16px 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pub-header-inner {
+    padding: 10px 14px;
+  }
+
+  .pub-brand img {
+    height: 38px;
+  }
+
+  .pub-brand-divider,
+  .pub-brand-text small {
+    display: none;
+  }
+
+  .pub-brand-text strong {
+    font-size: 15px;
+  }
+
+  .pub-public-badge {
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+
+  .pub-shell {
+    padding: 0 14px 28px;
+  }
+
+  .pub-page-head {
+    padding: 18px 0 12px;
+  }
+
+  .pub-page-head h1 {
+    font-size: 21px;
+  }
+
+  .pub-filter-grid,
+  .pub-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-kpi {
+    padding: 14px 16px;
+  }
+
+  .pub-kpi-value {
+    font-size: 24px;
+  }
+
+  .pub-tree-row {
+    grid-template-columns: minmax(0, 1fr) 54px;
+    gap: 8px;
+  }
+
+  .pub-tree-row .pub-bar {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .pub-tree-row.is-child {
+    padding-left: 20px;
+  }
+
+  .pub-card-actions {
+    width: 100%;
+  }
+
+  .pub-search {
+    width: 100%;
+  }
+
+  .pub-tabs {
+    width: 100%;
+  }
+
+  .pub-tab {
+    flex: 1;
+  }
+
+  .pub-pagination {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .pub-chart {
+    height: 230px;
+  }
+
+  .pub-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

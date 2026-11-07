@@ -1,0 +1,1037 @@
+[
+ {
+  "name": "presentation-board",
+  "category": "education",
+  "file": "education/presentation-board.png"
+ },
+ {
+  "name": "alarm-clock",
+  "category": "education",
+  "file": "education/alarm-clock.png"
+ },
+ {
+  "name": "chat",
+  "category": "education",
+  "file": "education/chat.png"
+ },
+ {
+  "name": "blackboard",
+  "category": "education",
+  "file": "education/blackboard.png"
+ },
+ {
+  "name": "eraser",
+  "category": "education",
+  "file": "education/eraser.png"
+ },
+ {
+  "name": "tv-monitor",
+  "category": "education",
+  "file": "education/tv-monitor.png"
+ },
+ {
+  "name": "pencil-ruler",
+  "category": "education",
+  "file": "education/pencil-ruler.png"
+ },
+ {
+  "name": "open-book",
+  "category": "education",
+  "file": "education/open-book.png"
+ },
+ {
+  "name": "marker",
+  "category": "education",
+  "file": "education/marker.png"
+ },
+ {
+  "name": "atom",
+  "category": "education",
+  "file": "education/atom.png"
+ },
+ {
+  "name": "notebook",
+  "category": "education",
+  "file": "education/notebook.png"
+ },
+ {
+  "name": "medal",
+  "category": "education",
+  "file": "education/medal.png"
+ },
+ {
+  "name": "laptop",
+  "category": "education",
+  "file": "education/laptop.png"
+ },
+ {
+  "name": "magnet",
+  "category": "education",
+  "file": "education/magnet.png"
+ },
+ {
+  "name": "books-stack",
+  "category": "education",
+  "file": "education/books-stack.png"
+ },
+ {
+  "name": "scales",
+  "category": "education",
+  "file": "education/scales.png"
+ },
+ {
+  "name": "school-bus",
+  "category": "education",
+  "file": "education/school-bus.png"
+ },
+ {
+  "name": "calendar",
+  "category": "education",
+  "file": "education/calendar.png"
+ },
+ {
+  "name": "compass",
+  "category": "education",
+  "file": "education/compass.png"
+ },
+ {
+  "name": "museum",
+  "category": "education",
+  "file": "education/museum.png"
+ },
+ {
+  "name": "glasses",
+  "category": "education",
+  "file": "education/glasses.png"
+ },
+ {
+  "name": "graduation-cap",
+  "category": "education",
+  "file": "education/graduation-cap.png"
+ },
+ {
+  "name": "music-note",
+  "category": "education",
+  "file": "education/music-note.png"
+ },
+ {
+  "name": "apple",
+  "category": "education",
+  "file": "education/apple.png"
+ },
+ {
+  "name": "binder",
+  "category": "education",
+  "file": "education/binder.png"
+ },
+ {
+  "name": "ruler",
+  "category": "education",
+  "file": "education/ruler.png"
+ },
+ {
+  "name": "computer-mouse",
+  "category": "education",
+  "file": "education/computer-mouse.png"
+ },
+ {
+  "name": "pen",
+  "category": "education",
+  "file": "education/pen.png"
+ },
+ {
+  "name": "lightbulb",
+  "category": "education",
+  "file": "education/lightbulb.png"
+ },
+ {
+  "name": "loudspeaker",
+  "category": "education",
+  "file": "education/loudspeaker.png"
+ },
+ {
+  "name": "ruler-angled",
+  "category": "education",
+  "file": "education/ruler-angled.png"
+ },
+ {
+  "name": "flask",
+  "category": "education",
+  "file": "education/flask.png"
+ },
+ {
+  "name": "clipboard-checklist",
+  "category": "education",
+  "file": "education/clipboard-checklist.png"
+ },
+ {
+  "name": "microscope",
+  "category": "education",
+  "file": "education/microscope.png"
+ },
+ {
+  "name": "rugby-ball",
+  "category": "education",
+  "file": "education/rugby-ball.png"
+ },
+ {
+  "name": "briefcase",
+  "category": "education",
+  "file": "education/briefcase.png"
+ },
+ {
+  "name": "globe",
+  "category": "education",
+  "file": "education/globe.png"
+ },
+ {
+  "name": "projector",
+  "category": "education",
+  "file": "education/projector.png"
+ },
+ {
+  "name": "magnet-horseshoe",
+  "category": "education",
+  "file": "education/magnet-horseshoe.png"
+ },
+ {
+  "name": "trophy",
+  "category": "education",
+  "file": "education/trophy.png"
+ },
+ {
+  "name": "telescope",
+  "category": "education",
+  "file": "education/telescope.png"
+ },
+ {
+  "name": "server",
+  "category": "education",
+  "file": "education/server.png"
+ },
+ {
+  "name": "barcode",
+  "category": "education",
+  "file": "education/barcode.png"
+ },
+ {
+  "name": "film-reel",
+  "category": "education",
+  "file": "education/film-reel.png"
+ },
+ {
+  "name": "pen-nib",
+  "category": "education",
+  "file": "education/pen-nib.png"
+ },
+ {
+  "name": "scroll",
+  "category": "education",
+  "file": "education/scroll.png"
+ },
+ {
+  "name": "magnifier",
+  "category": "education",
+  "file": "education/magnifier.png"
+ },
+ {
+  "name": "palette",
+  "category": "education",
+  "file": "education/palette.png"
+ },
+ {
+  "name": "hourglass",
+  "category": "education",
+  "file": "education/hourglass.png"
+ },
+ {
+  "name": "books-row",
+  "category": "education",
+  "file": "education/books-row.png"
+ },
+ {
+  "name": "scissors",
+  "category": "medical",
+  "file": "medical/scissors.png"
+ },
+ {
+  "name": "bone",
+  "category": "medical",
+  "file": "medical/bone.png"
+ },
+ {
+  "name": "kidneys",
+  "category": "medical",
+  "file": "medical/kidneys.png"
+ },
+ {
+  "name": "lungs",
+  "category": "medical",
+  "file": "medical/lungs.png"
+ },
+ {
+  "name": "bandage",
+  "category": "medical",
+  "file": "medical/bandage.png"
+ },
+ {
+  "name": "crutch",
+  "category": "medical",
+  "file": "medical/crutch.png"
+ },
+ {
+  "name": "petri-dish",
+  "category": "medical",
+  "file": "medical/petri-dish.png"
+ },
+ {
+  "name": "sperm",
+  "category": "medical",
+  "file": "medical/sperm.png"
+ },
+ {
+  "name": "tooth-cracked",
+  "category": "medical",
+  "file": "medical/tooth-cracked.png"
+ },
+ {
+  "name": "helicopter",
+  "category": "medical",
+  "file": "medical/helicopter.png"
+ },
+ {
+  "name": "liver",
+  "category": "medical",
+  "file": "medical/liver.png"
+ },
+ {
+  "name": "iv-bag",
+  "category": "medical",
+  "file": "medical/iv-bag.png"
+ },
+ {
+  "name": "vital-monitor",
+  "category": "medical",
+  "file": "medical/vital-monitor.png"
+ },
+ {
+  "name": "hospital-bed",
+  "category": "medical",
+  "file": "medical/hospital-bed.png"
+ },
+ {
+  "name": "blood-drop",
+  "category": "medical",
+  "file": "medical/blood-drop.png"
+ },
+ {
+  "name": "heartbeat",
+  "category": "medical",
+  "file": "medical/heartbeat.png"
+ },
+ {
+  "name": "ambulance",
+  "category": "medical",
+  "file": "medical/ambulance.png"
+ },
+ {
+  "name": "syringe",
+  "category": "medical",
+  "file": "medical/syringe.png"
+ },
+ {
+  "name": "hospital",
+  "category": "medical",
+  "file": "medical/hospital.png"
+ },
+ {
+  "name": "wheelchair",
+  "category": "medical",
+  "file": "medical/wheelchair.png"
+ },
+ {
+  "name": "pills",
+  "category": "medical",
+  "file": "medical/pills.png"
+ },
+ {
+  "name": "first-aid-kit",
+  "category": "medical",
+  "file": "medical/first-aid-kit.png"
+ },
+ {
+  "name": "scalpel",
+  "category": "medical",
+  "file": "medical/scalpel.png"
+ },
+ {
+  "name": "stethoscope",
+  "category": "medical",
+  "file": "medical/stethoscope.png"
+ },
+ {
+  "name": "test-tube",
+  "category": "medical",
+  "file": "medical/test-tube.png"
+ },
+ {
+  "name": "virus",
+  "category": "medical",
+  "file": "medical/virus.png"
+ },
+ {
+  "name": "iv-drip",
+  "category": "medical",
+  "file": "medical/iv-drip.png"
+ },
+ {
+  "name": "head",
+  "category": "medical",
+  "file": "medical/head.png"
+ },
+ {
+  "name": "mri",
+  "category": "medical",
+  "file": "medical/mri.png"
+ },
+ {
+  "name": "tooth",
+  "category": "medical",
+  "file": "medical/tooth.png"
+ },
+ {
+  "name": "spine",
+  "category": "medical",
+  "file": "medical/spine.png"
+ },
+ {
+  "name": "microscope",
+  "category": "medical",
+  "file": "medical/microscope.png"
+ },
+ {
+  "name": "thermometer",
+  "category": "medical",
+  "file": "medical/thermometer.png"
+ },
+ {
+  "name": "blood-pressure",
+  "category": "medical",
+  "file": "medical/blood-pressure.png"
+ },
+ {
+  "name": "ct-scanner",
+  "category": "medical",
+  "file": "medical/ct-scanner.png"
+ },
+ {
+  "name": "brain",
+  "category": "medical",
+  "file": "medical/brain.png"
+ },
+ {
+  "name": "bacteria",
+  "category": "medical",
+  "file": "medical/bacteria.png"
+ },
+ {
+  "name": "nose",
+  "category": "medical",
+  "file": "medical/nose.png"
+ },
+ {
+  "name": "iv-stand",
+  "category": "medical",
+  "file": "medical/iv-stand.png"
+ },
+ {
+  "name": "medical-chart",
+  "category": "medical",
+  "file": "medical/medical-chart.png"
+ },
+ {
+  "name": "pills-blister",
+  "category": "medical",
+  "file": "medical/pills-blister.png"
+ },
+ {
+  "name": "thermometer-digital",
+  "category": "medical",
+  "file": "medical/thermometer-digital.png"
+ },
+ {
+  "name": "ear",
+  "category": "medical",
+  "file": "medical/ear.png"
+ },
+ {
+  "name": "stomach",
+  "category": "medical",
+  "file": "medical/stomach.png"
+ },
+ {
+  "name": "doctor",
+  "category": "medical",
+  "file": "medical/doctor.png"
+ },
+ {
+  "name": "nurse",
+  "category": "medical",
+  "file": "medical/nurse.png"
+ },
+ {
+  "name": "flask",
+  "category": "medical",
+  "file": "medical/flask.png"
+ },
+ {
+  "name": "intestines",
+  "category": "medical",
+  "file": "medical/intestines.png"
+ },
+ {
+  "name": "dna",
+  "category": "medical",
+  "file": "medical/dna.png"
+ },
+ {
+  "name": "blood-bag",
+  "category": "medical",
+  "file": "medical/blood-bag.png"
+ },
+ {
+  "name": "chair",
+  "category": "support",
+  "file": "support/chair.png"
+ },
+ {
+  "name": "plug",
+  "category": "support",
+  "file": "support/plug.png"
+ },
+ {
+  "name": "hotline",
+  "category": "support",
+  "file": "support/hotline.png"
+ },
+ {
+  "name": "clipboard-info",
+  "category": "support",
+  "file": "support/clipboard-info.png"
+ },
+ {
+  "name": "document",
+  "category": "support",
+  "file": "support/document.png"
+ },
+ {
+  "name": "document-approved",
+  "category": "support",
+  "file": "support/document-approved.png"
+ },
+ {
+  "name": "megaphone",
+  "category": "support",
+  "file": "support/megaphone.png"
+ },
+ {
+  "name": "documents",
+  "category": "support",
+  "file": "support/documents.png"
+ },
+ {
+  "name": "gift",
+  "category": "support",
+  "file": "support/gift.png"
+ },
+ {
+  "name": "headset",
+  "category": "support",
+  "file": "support/headset.png"
+ },
+ {
+  "name": "pie-chart",
+  "category": "support",
+  "file": "support/pie-chart.png"
+ },
+ {
+  "name": "idea",
+  "category": "support",
+  "file": "support/idea.png"
+ },
+ {
+  "name": "folder-info",
+  "category": "support",
+  "file": "support/folder-info.png"
+ },
+ {
+  "name": "search",
+  "category": "support",
+  "file": "support/search.png"
+ },
+ {
+  "name": "folder-settings",
+  "category": "support",
+  "file": "support/folder-settings.png"
+ },
+ {
+  "name": "folder-notification",
+  "category": "support",
+  "file": "support/folder-notification.png"
+ },
+ {
+  "name": "microphone",
+  "category": "support",
+  "file": "support/microphone.png"
+ },
+ {
+  "name": "handshake",
+  "category": "support",
+  "file": "support/handshake.png"
+ },
+ {
+  "name": "wrench",
+  "category": "support",
+  "file": "support/wrench.png"
+ },
+ {
+  "name": "headset-alt",
+  "category": "support",
+  "file": "support/headset-alt.png"
+ },
+ {
+  "name": "monitor-settings",
+  "category": "support",
+  "file": "support/monitor-settings.png"
+ },
+ {
+  "name": "laptop-info",
+  "category": "support",
+  "file": "support/laptop-info.png"
+ },
+ {
+  "name": "tools",
+  "category": "support",
+  "file": "support/tools.png"
+ },
+ {
+  "name": "chat-question",
+  "category": "support",
+  "file": "support/chat-question.png"
+ },
+ {
+  "name": "gears",
+  "category": "support",
+  "file": "support/gears.png"
+ },
+ {
+  "name": "smartphone-settings",
+  "category": "support",
+  "file": "support/smartphone-settings.png"
+ },
+ {
+  "name": "book",
+  "category": "support",
+  "file": "support/book.png"
+ },
+ {
+  "name": "hourglass-info",
+  "category": "support",
+  "file": "support/hourglass-info.png"
+ },
+ {
+  "name": "monitor-user",
+  "category": "support",
+  "file": "support/monitor-user.png"
+ },
+ {
+  "name": "smartphone-info",
+  "category": "support",
+  "file": "support/smartphone-info.png"
+ },
+ {
+  "name": "chip",
+  "category": "support",
+  "file": "support/chip.png"
+ },
+ {
+  "name": "certificates",
+  "category": "support",
+  "file": "support/certificates.png"
+ },
+ {
+  "name": "location-heart",
+  "category": "support",
+  "file": "support/location-heart.png"
+ },
+ {
+  "name": "key-money",
+  "category": "support",
+  "file": "support/key-money.png"
+ },
+ {
+  "name": "document-settings",
+  "category": "support",
+  "file": "support/document-settings.png"
+ },
+ {
+  "name": "webcam",
+  "category": "support",
+  "file": "support/webcam.png"
+ },
+ {
+  "name": "hands-gear",
+  "category": "support",
+  "file": "support/hands-gear.png"
+ },
+ {
+  "name": "siren",
+  "category": "support",
+  "file": "support/siren.png"
+ },
+ {
+  "name": "hands-help",
+  "category": "support",
+  "file": "support/hands-help.png"
+ },
+ {
+  "name": "person-question",
+  "category": "support",
+  "file": "support/person-question.png"
+ },
+ {
+  "name": "finance",
+  "category": "support",
+  "file": "support/finance.png"
+ },
+ {
+  "name": "thumbs-up",
+  "category": "support",
+  "file": "support/thumbs-up.png"
+ },
+ {
+  "name": "network-cable",
+  "category": "support",
+  "file": "support/network-cable.png"
+ },
+ {
+  "name": "helmet",
+  "category": "support",
+  "file": "support/helmet.png"
+ },
+ {
+  "name": "syringe",
+  "category": "support",
+  "file": "support/syringe.png"
+ },
+ {
+  "name": "lock-search",
+  "category": "support",
+  "file": "support/lock-search.png"
+ },
+ {
+  "name": "map",
+  "category": "support",
+  "file": "support/map.png"
+ },
+ {
+  "name": "phone-24",
+  "category": "support",
+  "file": "support/phone-24.png"
+ },
+ {
+  "name": "phone-tools",
+  "category": "support",
+  "file": "support/phone-tools.png"
+ },
+ {
+  "name": "wrench-settings",
+  "category": "support",
+  "file": "support/wrench-settings.png"
+ },
+ {
+  "name": "avatar-01",
+  "category": "avatar",
+  "file": "avatar/avatar-01.png"
+ },
+ {
+  "name": "avatar-02",
+  "category": "avatar",
+  "file": "avatar/avatar-02.png"
+ },
+ {
+  "name": "avatar-03",
+  "category": "avatar",
+  "file": "avatar/avatar-03.png"
+ },
+ {
+  "name": "avatar-04",
+  "category": "avatar",
+  "file": "avatar/avatar-04.png"
+ },
+ {
+  "name": "avatar-05",
+  "category": "avatar",
+  "file": "avatar/avatar-05.png"
+ },
+ {
+  "name": "avatar-06",
+  "category": "avatar",
+  "file": "avatar/avatar-06.png"
+ },
+ {
+  "name": "avatar-07",
+  "category": "avatar",
+  "file": "avatar/avatar-07.png"
+ },
+ {
+  "name": "avatar-08",
+  "category": "avatar",
+  "file": "avatar/avatar-08.png"
+ },
+ {
+  "name": "avatar-09",
+  "category": "avatar",
+  "file": "avatar/avatar-09.png"
+ },
+ {
+  "name": "avatar-10",
+  "category": "avatar",
+  "file": "avatar/avatar-10.png"
+ },
+ {
+  "name": "avatar-11",
+  "category": "avatar",
+  "file": "avatar/avatar-11.png"
+ },
+ {
+  "name": "avatar-12",
+  "category": "avatar",
+  "file": "avatar/avatar-12.png"
+ },
+ {
+  "name": "avatar-13",
+  "category": "avatar",
+  "file": "avatar/avatar-13.png"
+ },
+ {
+  "name": "avatar-14",
+  "category": "avatar",
+  "file": "avatar/avatar-14.png"
+ },
+ {
+  "name": "avatar-15",
+  "category": "avatar",
+  "file": "avatar/avatar-15.png"
+ },
+ {
+  "name": "avatar-16",
+  "category": "avatar",
+  "file": "avatar/avatar-16.png"
+ },
+ {
+  "name": "avatar-17",
+  "category": "avatar",
+  "file": "avatar/avatar-17.png"
+ },
+ {
+  "name": "avatar-18",
+  "category": "avatar",
+  "file": "avatar/avatar-18.png"
+ },
+ {
+  "name": "avatar-19",
+  "category": "avatar",
+  "file": "avatar/avatar-19.png"
+ },
+ {
+  "name": "avatar-20",
+  "category": "avatar",
+  "file": "avatar/avatar-20.png"
+ },
+ {
+  "name": "avatar-21",
+  "category": "avatar",
+  "file": "avatar/avatar-21.png"
+ },
+ {
+  "name": "avatar-22",
+  "category": "avatar",
+  "file": "avatar/avatar-22.png"
+ },
+ {
+  "name": "avatar-23",
+  "category": "avatar",
+  "file": "avatar/avatar-23.png"
+ },
+ {
+  "name": "avatar-24",
+  "category": "avatar",
+  "file": "avatar/avatar-24.png"
+ },
+ {
+  "name": "avatar-25",
+  "category": "avatar",
+  "file": "avatar/avatar-25.png"
+ },
+ {
+  "name": "avatar-26",
+  "category": "avatar",
+  "file": "avatar/avatar-26.png"
+ },
+ {
+  "name": "avatar-27",
+  "category": "avatar",
+  "file": "avatar/avatar-27.png"
+ },
+ {
+  "name": "avatar-28",
+  "category": "avatar",
+  "file": "avatar/avatar-28.png"
+ },
+ {
+  "name": "avatar-29",
+  "category": "avatar",
+  "file": "avatar/avatar-29.png"
+ },
+ {
+  "name": "avatar-30",
+  "category": "avatar",
+  "file": "avatar/avatar-30.png"
+ },
+ {
+  "name": "avatar-31",
+  "category": "avatar",
+  "file": "avatar/avatar-31.png"
+ },
+ {
+  "name": "avatar-32",
+  "category": "avatar",
+  "file": "avatar/avatar-32.png"
+ },
+ {
+  "name": "avatar-33",
+  "category": "avatar",
+  "file": "avatar/avatar-33.png"
+ },
+ {
+  "name": "avatar-34",
+  "category": "avatar",
+  "file": "avatar/avatar-34.png"
+ },
+ {
+  "name": "avatar-35",
+  "category": "avatar",
+  "file": "avatar/avatar-35.png"
+ },
+ {
+  "name": "avatar-36",
+  "category": "avatar",
+  "file": "avatar/avatar-36.png"
+ },
+ {
+  "name": "avatar-37",
+  "category": "avatar",
+  "file": "avatar/avatar-37.png"
+ },
+ {
+  "name": "avatar-38",
+  "category": "avatar",
+  "file": "avatar/avatar-38.png"
+ },
+ {
+  "name": "avatar-39",
+  "category": "avatar",
+  "file": "avatar/avatar-39.png"
+ },
+ {
+  "name": "avatar-40",
+  "category": "avatar",
+  "file": "avatar/avatar-40.png"
+ },
+ {
+  "name": "avatar-41",
+  "category": "avatar",
+  "file": "avatar/avatar-41.png"
+ },
+ {
+  "name": "avatar-42",
+  "category": "avatar",
+  "file": "avatar/avatar-42.png"
+ },
+ {
+  "name": "avatar-43",
+  "category": "avatar",
+  "file": "avatar/avatar-43.png"
+ },
+ {
+  "name": "avatar-44",
+  "category": "avatar",
+  "file": "avatar/avatar-44.png"
+ },
+ {
+  "name": "avatar-45",
+  "category": "avatar",
+  "file": "avatar/avatar-45.png"
+ },
+ {
+  "name": "avatar-46",
+  "category": "avatar",
+  "file": "avatar/avatar-46.png"
+ },
+ {
+  "name": "avatar-47",
+  "category": "avatar",
+  "file": "avatar/avatar-47.png"
+ },
+ {
+  "name": "avatar-48",
+  "category": "avatar",
+  "file": "avatar/avatar-48.png"
+ },
+ {
+  "name": "avatar-49",
+  "category": "avatar",
+  "file": "avatar/avatar-49.png"
+ },
+ {
+  "name": "avatar-50",
+  "category": "avatar",
+  "file": "avatar/avatar-50.png"
+ },
+ {
+  "name": "avatar-51",
+  "category": "avatar",
+  "file": "avatar/avatar-51.png"
+ },
+ {
+  "name": "avatar-52",
+  "category": "avatar",
+  "file": "avatar/avatar-52.png"
+ },
+ {
+  "name": "avatar-53",
+  "category": "avatar",
+  "file": "avatar/avatar-53.png"
+ },
+ {
+  "name": "avatar-54",
+  "category": "avatar",
+  "file": "avatar/avatar-54.png"
+ },
+ {
+  "name": "avatar-55",
+  "category": "avatar",
+  "file": "avatar/avatar-55.png"
+ },
+ {
+  "name": "avatar-56",
+  "category": "avatar",
+  "file": "avatar/avatar-56.png"
+ },
+ {
+  "name": "pillar",
+  "category": "education",
+  "file": "education/pillar.png"
+ }
+]

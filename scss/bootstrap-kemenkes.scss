@@ -1,0 +1,12 @@
+// bootstrap-kemenkes-theme (unofficial) — full-build entry
+//
+// Use this only if you want Bootstrap bundled into a single CSS file:
+//   npm run build:full
+//
+// For the quick CDN setup, load Bootstrap 5 first, then
+// dist/bootstrap-kemenkes.css (override-only). See README.
+
+@import "bootstrap/scss/bootstrap";
+
+@import "tokens";
+@import "components";

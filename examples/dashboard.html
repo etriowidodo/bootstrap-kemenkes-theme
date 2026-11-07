@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — bootstrap-kemenkes-theme</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo-kemenkes/favicon-32.png?v=3">
+  <link rel="icon" type="image/png" sizes="256x256" href="../assets/logo-kemenkes/favicon-256.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo-kemenkes/favicon-180.png?v=3">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../dist/bootstrap-kemenkes.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+
+<nav class="navbar navbar-expand-lg kmk-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../assets/logo-kemenkes/logo-horizontal-color-trim.png" alt="Kementerian Kesehatan" style="height:40px;width:auto">
+      <span class="kmk-brand-divider"></span>
+      <span class="kmk-brand-text"><strong>Kemenkes Theme</strong><small>Bootstrap 5 · Kementerian Kesehatan RI</small></span>
+    </a>
+    <span class="kmk-public-badge d-none d-lg-inline-flex">Unofficial · MIT</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kmknav" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="kmknav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="showcase.html">Contoh</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Komponen</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="components.html">Kitchen Sink</a></li>
+            <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+            <li><a class="dropdown-item" href="cards-icons.html">Card + Ikon</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="data-table.html">Data Table</a></li>
+            <li><a class="dropdown-item" href="wizard.html">Form Wizard</a></li>
+            <li><a class="dropdown-item" href="charts.html">Chart</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Panduan</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="font-picker.html">Font Picker</a></li>
+            <li><a class="dropdown-item" href="logo.html">Logo &amp; Supergrafis</a></li>
+            <li><a class="dropdown-item" href="icons.html">Ikon</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="container py-4">
+  <div class="d-flex flex-wrap justify-content-between align-items-end mb-3 gap-2">
+    <div>
+      <h1 class="h4 mb-1">Ringkasan Kinerja</h1>
+      <div class="small text-kmk-gray">Data per Triwulan II · Kementerian Kesehatan RI</div>
+    </div>
+    <div class="small text-kmk-gray">Terakhir diperbarui: <strong>8 Nov 2026 10:24</strong> WIB</div>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-xl-3"><div class="kmk-kpi"><img class="kmk-kpi-icon" src="../assets/ep-brand/icons/education/presentation-board.png" alt=""><div class="kmk-kpi-label">Indikator</div><div class="kmk-kpi-value">42</div><div class="kmk-kpi-sub">Aktif tahun ini</div></div></div>
+    <div class="col-6 col-xl-3"><div class="kmk-kpi is-lime"><img class="kmk-kpi-icon" src="../assets/ep-brand/icons/education/clipboard-checklist.png" alt=""><div class="kmk-kpi-label">Terukur</div><div class="kmk-kpi-value">38</div><div class="kmk-kpi-sub">90,5% dari total</div></div></div>
+    <div class="col-6 col-xl-3"><div class="kmk-kpi is-warning"><img class="kmk-kpi-icon" src="../assets/ep-brand/icons/education/medal.png" alt=""><div class="kmk-kpi-label">Capaian</div><div class="kmk-kpi-value">86,2%</div><div class="kmk-kpi-sub">Rata-rata TW II</div></div></div>
+    <div class="col-6 col-xl-3"><div class="kmk-kpi is-danger"><img class="kmk-kpi-icon" src="../assets/ep-brand/icons/education/briefcase.png" alt=""><div class="kmk-kpi-label">Realisasi</div><div class="kmk-kpi-value">Rp 1,2 T</div><div class="kmk-kpi-sub">62% dari pagu</div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-lg-8">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Capaian per Unit</span>
+          <span class="kmk-badge">TW II</span>
+        </div>
+        <div class="table-responsive">
+          <table class="table kmk-table">
+            <thead>
+              <tr><th>Unit</th><th class="is-num">Indikator</th><th class="is-num">Capaian</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sekretariat Jenderal</td><td class="is-num">8</td><td class="is-num">92,1%</td><td><span class="kmk-badge is-ach">Tercapai</span></td></tr>
+              <tr><td>Ditjen Kesehatan Primer dan Komunitas</td><td class="is-num">10</td><td class="is-num">88,4%</td><td><span class="kmk-badge is-proc">Dalam Proses</span></td></tr>
+              <tr><td>Ditjen P2P</td><td class="is-num">9</td><td class="is-num">81,0%</td><td><span class="kmk-badge is-proc">Dalam Proses</span></td></tr>
+              <tr><td>Ditjen Farmalkes</td><td class="is-num">7</td><td class="is-num">64,8%</td><td><span class="kmk-badge is-miss">Belum Tercapai</span></td></tr>
+              <tr><td>UPT &amp; Lainnya</td><td class="is-num">8</td><td class="is-num">—</td><td><span class="kmk-badge is-empty">Belum Diukur</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card mb-3">
+        <div class="card-header">Realisasi Anggaran</div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between small mb-1"><span>Pagu</span><strong>Rp 46,6 M</strong></div>
+          <div class="d-flex justify-content-between small mb-1"><span>Realisasi</span><strong>Rp 36,4 M</strong></div>
+          <div class="progress my-2"><div class="progress-bar" style="width:78%"></div></div>
+          <div class="d-flex justify-content-between small"><span class="text-kmk-gray">78% terpakai</span><span class="text-kmk-gray">Sisa Rp 10,2 M</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Catatan</div>
+        <div class="card-body">
+          <div class="kmk-callout is-warning">
+            <div class="kmk-callout-title">Perhatian</div>
+            3 indikator belum memiliki realisasi TW II.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="kmk-footer py-4 mt-4">
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>bootstrap-kemenkes-theme — unofficial</span>
+    <span>Data contoh/dummy</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

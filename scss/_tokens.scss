@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "VAG Rounded";
+  src: url("../assets/fonts/vagrounded-bold.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI Brand";
+  src: url("../assets/fonts/segoeui.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Theme tokens — bootstrap-kemenkes-theme (unofficial)
+// Official Kemenkes 2024 palette (RGB equivalents of the brand CMYK set).
+// Plain CSS custom properties so they also work without a build step.
+
+:root {
+  --kmk-teal: #06b2bb;
+  --kmk-teal-cyan: #00d0d7;
+  --kmk-teal-light: #16ae97;
+  --kmk-teal-dark: #087b6d;
+  --kmk-teal-deep: #007276;
+  --kmk-green-leaf: #43b077;
+  --kmk-lime: #d2db2f;
+  --kmk-olive: #c3b82b;
+  --kmk-lime-soft: #f4f7c2;
+  --kmk-orange: #e3862d;
+  --kmk-red: #c00000;
+  --kmk-gray: #696a69;
+  --kmk-gray-soft: #898983;
+  --kmk-gray-dark: #62625e;
+  --kmk-gray-light: #bfbfbf;
+  --kmk-pale-teal: #c7edeb;
+  --kmk-white: #ffffff;
+  --kmk-canvas: #f2f2f2;
+  --kmk-canvas-2: #f4f7c2;
+  --kmk-line: #d9dddb;
+
+  --kmk-teal-900: #007276;
+  --kmk-warning: var(--kmk-orange);
+  --kmk-danger: var(--kmk-red);
+  --kmk-success: var(--kmk-teal-light);
+
+  --kmk-heading-font: "VAG Rounded", "Quicksand", "Varela Round", "Segoe UI", system-ui, sans-serif;
+  --kmk-body-font: "Segoe UI", "Segoe UI Brand", system-ui, -apple-system, sans-serif;
+
+  --kmk-radius: 14px;
+  --kmk-radius-sm: 10px;
+  --kmk-shadow-1: 0 1px 2px rgba(8, 74, 66, 0.06);
+  --kmk-shadow-2: 0 16px 34px -22px rgba(8, 74, 66, 0.42);
+}
+
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #06b2bb;
+  --bs-primary-rgb: 6, 178, 187;
+  --bs-secondary: #087b6d;
+  --bs-secondary-rgb: 8, 123, 109;
+  --bs-success: #16ae97;
+  --bs-success-rgb: 22, 174, 151;
+  --bs-info: #007276;
+  --bs-info-rgb: 0, 114, 118;
+  --bs-warning: #e3862d;
+  --bs-warning-rgb: 227, 134, 45;
+  --bs-danger: #c00000;
+  --bs-danger-rgb: 192, 0, 0;
+  --bs-light: #f4f7c2;
+  --bs-light-rgb: 244, 247, 194;
+  --bs-dark: #62625e;
+  --bs-dark-rgb: 98, 98, 94;
+
+  --bs-body-font-family: var(--kmk-body-font);
+  --bs-body-color: #696a69;
+  --bs-body-bg: #ffffff;
+  --bs-emphasis-color: #087b6d;
+  --bs-secondary-color: #898983;
+
+  --bs-link-color: #087b6d;
+  --bs-link-hover-color: #007276;
+
+  --bs-border-color: var(--kmk-line);
+  --bs-border-radius: var(--kmk-radius-sm);
+  --bs-border-radius-lg: var(--kmk-radius);
+  --bs-border-radius-sm: 8px;
+  --bs-focus-ring-color: rgba(6, 178, 187, 0.25);
+}

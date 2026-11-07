@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "VAG Rounded";
+  src: url("../../assets/fonts/vagrounded-bold.ttf") format("truetype");
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI Brand";
+  src: url("../../assets/fonts/segoeui.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --pub-canvas: #e4efec;
+  --pub-line: #d3e2de;
+  --pub-heading: "VAG Rounded", "Varela Round", "Segoe UI", system-ui, sans-serif;
+  --pub-body: "Segoe UI Brand", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --pub-shadow-1: 0 1px 2px rgba(8, 74, 66, 0.06);
+  --pub-shadow-2: 0 16px 34px -22px rgba(8, 74, 66, 0.42);
+  --brand-teal: #00b6aa;
+  --brand-teal-dark: #087b6d;
+  --brand-teal-deep: #0b5f57;
+  --brand-lime: #cad92a;
+  --brand-lime-deep: #6b7415;
+  --brand-green: #16ae97;
+  --brand-green-deep: #0f6f5f;
+  --brand-amber: #e3862d;
+  --brand-amber-deep: #a75d13;
+  --brand-red: #c00000;
+}
+
+body {
+  font-family: var(--pub-body);
+  font-size: 13.5px;
+  background: var(--pub-canvas);
+  color: #4a5f5b;
+}
+
+.pub-brand-text strong,
+.pub-page-head h1,
+.pub-card-title,
+.pub-chart-title,
+.pub-sec-no,
+.pub-nav a,
+.pub-tab {
+  font-family: var(--pub-heading);
+  letter-spacing: 0;
+}
+
+.pub-header {
+  border-top: 4px solid var(--brand-teal);
+  box-shadow: var(--pub-shadow-1), 0 12px 26px -24px rgba(8, 74, 66, 0.55);
+}
+
+.pub-brand-text strong {
+  font-size: 19px;
+  color: var(--brand-teal-deep);
+}
+
+.pub-brand-text small {
+  color: #6f827e;
+}
+
+.pub-public-badge {
+  background: var(--brand-lime);
+  color: var(--brand-lime-deep);
+}
+
+.pub-nav {
+  background: #eef6f3;
+  border-color: var(--pub-line);
+}
+
+.pub-nav a.is-active {
+  background: var(--brand-teal-dark);
+  box-shadow: 0 8px 18px -8px rgba(8, 123, 109, 0.75);
+}
+
+.pub-page-head {
+  padding-top: 30px;
+}
+
+.pub-page-head h1 {
+  font-size: 29px;
+  color: var(--brand-teal-deep);
+}
+
+.pub-page-head p {
+  color: #6f827e;
+}
+
+.pub-kpi,
+.pub-card {
+  border-color: var(--pub-line);
+  box-shadow: var(--pub-shadow-1), var(--pub-shadow-2);
+}
+
+.pub-kpi {
+  border-width: 1px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.pub-kpi:nth-child(1) {
+  background: #e8f8f5;
+  border-color: #b8e6df;
+}
+
+.pub-kpi.is-green {
+  background: #e7f7f1;
+  border-color: #b6e4d3;
+}
+
+.pub-kpi.is-lime {
+  background: #f7fae0;
+  border-color: #dde7a4;
+}
+
+.pub-kpi.is-amber {
+  background: #fff2e4;
+  border-color: #f2d1a8;
+}
+
+.pub-kpi:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(8, 74, 66, 0.07), 0 22px 44px -24px rgba(8, 74, 66, 0.5);
+}
+
+.pub-kpi::before {
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 0;
+  background: var(--brand-teal);
+}
+
+.pub-kpi.is-green::before { background: var(--brand-green); }
+.pub-kpi.is-lime::before { background: var(--brand-lime); }
+.pub-kpi.is-amber::before { background: var(--brand-amber); }
+
+.pub-kpi-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  box-shadow: 0 6px 14px -8px rgba(8, 74, 66, 0.55);
+}
+
+.pub-kpi-icon svg {
+  display: none;
+}
+
+.pub-kpis .pub-kpi:nth-child(1) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/education/presentation-board.png"); }
+.pub-kpis .pub-kpi:nth-child(2) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/education/clipboard-checklist.png"); }
+.pub-kpis .pub-kpi:nth-child(3) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/education/medal.png"); }
+.pub-kpis .pub-kpi:nth-child(4) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/education/briefcase.png"); }
+
+.pub-kpi-label {
+  color: #5c736e;
+  font-size: 11.5px;
+}
+
+.pub-kpi-value {
+  font-size: clamp(24px, 2.3vw, 33px);
+  color: #0a4f47;
+}
+
+.pub-kpi.is-lime .pub-kpi-value { color: var(--brand-lime-deep); }
+.pub-kpi.is-amber .pub-kpi-value { color: var(--brand-amber-deep); }
+.pub-kpi.is-green .pub-kpi-value { color: var(--brand-green-deep); }
+
+.pub-kpi-sub {
+  color: #647a75;
+}
+
+.pub-card-head {
+  background: #f1f9f6;
+  box-shadow: inset 0 -3px 0 var(--brand-lime);
+}
+
+.pub-card-title {
+  font-size: 17px;
+  color: var(--brand-teal-deep);
+}
+
+.pub-card-sub {
+  color: #647a75;
+}
+
+.pub-sec-no {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  font-size: 15px;
+  background: var(--brand-teal-dark);
+  box-shadow: 0 6px 14px -8px rgba(8, 123, 109, 0.85);
+}
+
+.pub-bar {
+  height: 18px;
+  background: #dcebe7;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px #cfe0db;
+}
+
+.pub-bar-fill {
+  border-radius: 999px;
+}
+
+.pub-bar-fill.is-good { background: var(--brand-green); }
+.pub-bar-fill.is-mid { background: var(--brand-teal); }
+.pub-bar-fill.is-warn { background: var(--brand-amber); }
+.pub-bar-fill.is-low { background: var(--brand-red); }
+
+.pub-pct {
+  font-size: 14px;
+  color: var(--brand-teal-deep);
+}
+
+.pub-table-wrap {
+  border-color: var(--pub-line);
+}
+
+.pub-table {
+  font-size: 12.5px;
+}
+
+.pub-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--brand-lime);
+  color: var(--brand-teal-deep);
+  border-bottom: 1px solid #b4c524;
+  font-size: 11px;
+}
+
+.pub-table tbody tr:nth-child(even) td {
+  background: #f5f9ec;
+}
+
+.pub-table tbody tr:hover td {
+  background: #e4f5f1;
+}
+
+.pub-table td {
+  border-bottom-color: #e2ece9;
+  color: #4a5f5b;
+}
+
+.pub-tabs {
+  background: #eef6f3;
+  border-color: var(--pub-line);
+}
+
+.pub-tab.is-active {
+  background: var(--brand-teal-dark);
+  box-shadow: inset 0 -3px 0 var(--brand-lime), 0 6px 14px -8px rgba(8, 123, 109, 0.75);
+}
+
+.pub-btn {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px -12px rgba(8, 74, 66, 0.85);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.pub-btn:hover {
+  transform: translateY(-1px);
+}
+
+.pub-footnote {
+  background: #eef7f4;
+  border: 1px solid #d9e8e4;
+}
+
+.pub-chart-card {
+  border-color: var(--pub-line);
+  box-shadow: var(--pub-shadow-1);
+}
+
+.pub-empty {
+  background: #f4f9ed;
+  border-color: #d2e0c8;
+}
+
+.pub-status.is-ach {
+  background: #d8f2e8;
+  color: var(--brand-green-deep);
+}
+
+.pub-status.is-proc {
+  background: #fdecd7;
+  color: var(--brand-amber-deep);
+}
+
+.pub-status.is-miss {
+  background: #fbe0e0;
+  color: var(--brand-red);
+}
+
+.pub-footer {
+  border-top: 1px solid #d6e6e2;
+  margin-top: 28px;
+  color: #6f827e;
+}
+
+@media (max-width: 640px) {
+  .pub-page-head h1 { font-size: 23px; }
+  .pub-kpi:hover { transform: none; }
+  .pub-kpi-icon { width: 38px; height: 38px; }
+}
+
+@media print {
+  .pub-kpi,
+  .pub-card {
+    box-shadow: none !important;
+  }
+}
+
+/* ------------------------------------------------ ikon template publik */
+.pub-nav a svg { display: none; }
+
+.pub-nav a::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pub-nav a:nth-child(1)::before { background-image: url("../../assets/ep-brand/icons/education/presentation-board.png"); }
+.pub-nav a:nth-child(2)::before { background-image: url("../../assets/ep-brand/icons/support/finance.png"); }
+.pub-nav a.is-active::before { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.45); }
+
+.pub-public-badge svg { display: none; }
+
+.pub-public-badge::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../../assets/ep-brand/icons/education/open-book.png") center/contain no-repeat;
+}
+
+.pub-filter-card.is-info svg { display: none; }
+
+.pub-filter-card.is-info::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background: url("../../assets/ep-brand/icons/support/clipboard-info.png") center/contain no-repeat;
+}
+
+.pub-filter-card.is-info { position: relative; padding-left: 44px !important; }
+
+.pub-empty-icon svg { display: none; }
+
+.pub-empty-icon {
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pub-empty-icon:has(use[href="#i-target"]) { background-image: url("../../assets/ep-brand/icons/education/clipboard-checklist.png"); }
+.pub-empty-icon:has(use[href="#i-wallet"]) { background-image: url("../../assets/ep-brand/icons/support/finance.png"); }
+.pub-empty-icon:has(use[href="#i-shield"]) { background-image: url("../../assets/ep-brand/icons/support/lock-search.png"); }
+.pub-empty-icon:has(use[href="#i-chart"]) { background-image: url("../../assets/ep-brand/icons/support/pie-chart.png"); }
+
+/* ------------------------------------------------ ikon ringkasan anggaran */
+#anggaran-summary .pub-kpi:nth-child(1) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/support/finance.png"); }
+#anggaran-summary .pub-kpi:nth-child(2) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/support/document-approved.png"); }
+#anggaran-summary .pub-kpi:nth-child(3) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/support/pie-chart.png"); }
+#anggaran-summary .pub-kpi:nth-child(4) .pub-kpi-icon { background-image: url("../../assets/ep-brand/icons/support/folder-info.png"); }

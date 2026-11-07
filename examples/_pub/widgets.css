@@ -1,0 +1,151 @@
+.pub-chart-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 14px;
+}
+
+.pub-chart-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  background: var(--white);
+}
+
+.pub-chart-title {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--teal-deep);
+  margin-bottom: 3px;
+}
+
+.pub-chart-sub {
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.pub-chart {
+  position: relative;
+  height: 260px;
+}
+
+.pub-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 18px;
+  border: 1px dashed #cfe3df;
+  border-radius: 12px;
+  background: #fbfdfc;
+}
+
+.pub-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--teal-dark);
+  margin-bottom: 10px;
+}
+
+.pub-empty-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.pub-empty strong {
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.pub-empty span {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 4px;
+  max-width: 440px;
+  line-height: 1.5;
+}
+
+.pub-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pub-spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #d9e8e5;
+  border-top-color: var(--teal);
+  animation: pubspin 0.8s linear infinite;
+}
+
+@keyframes pubspin {
+  to { transform: rotate(360deg); }
+}
+
+.pub-alert {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pub-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.pub-footnote svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: var(--teal);
+}
+
+.pub-sakip-note {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+@media print {
+  .pub-header,
+  .pub-nav,
+  .pub-filter-grid,
+  .pub-card-actions,
+  .pub-footer,
+  .pub-back,
+  .pub-pagination {
+    display: none !important;
+  }
+
+  .pub-card,
+  .pub-kpi {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .pub-shell {
+    max-width: none;
+    padding: 0;
+  }
+}

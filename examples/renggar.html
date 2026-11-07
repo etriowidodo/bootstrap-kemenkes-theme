@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Contoh statis Dashboard Publik Monev Kinerja &amp; Anggaran (data dummy).">
+  <title>Dashboard Monev Kinerja &amp; Anggaran (contoh) | Kemenkes Theme</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo-kemenkes/favicon-32.png?v=3">
+  <link rel="icon" type="image/png" sizes="256x256" href="../assets/logo-kemenkes/favicon-256.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo-kemenkes/favicon-180.png?v=3">
+<link rel="stylesheet" href="_pub/base.css">
+  <link rel="stylesheet" href="_pub/forms.css">
+  <link rel="stylesheet" href="_pub/components.css">
+  <link rel="stylesheet" href="_pub/tables.css">
+  <link rel="stylesheet" href="_pub/widgets.css">
+  <link rel="stylesheet" href="_pub/responsive.css">
+  <link rel="stylesheet" href="_pub/polish.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16" cy="14.5" r="1"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M7 15l4-5 3 3 5-7"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 17h12v4H6z"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+</svg>
+
+<header class="pub-header">
+  <div class="pub-header-inner">
+    <a class="pub-brand" href="renggar.html">
+      <img src="../assets/logo-kemenkes/logo-horizontal-color-trim.png" alt="Kementerian Kesehatan" style="height:30px;width:auto">
+      <span class="pub-brand-divider" aria-hidden="true"></span>
+      <span class="pub-brand-text">
+        <strong>Dashboard Monev</strong>
+        <small>Kinerja &amp; Anggaran · Kementerian Kesehatan RI</small>
+      </span>
+    </a>
+    <span class="pub-public-badge"><svg><use href="#i-lock"></use></svg> Akses publik · tanpa login</span>
+    <nav class="pub-nav" aria-label="Navigasi utama">
+      <a href="renggar.html" class="is-active"><svg><use href="#i-home"></use></svg> Beranda</a>
+      <a href="renggar-anggaran.html"><svg><use href="#i-wallet"></use></svg> Monitoring Anggaran</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="pub-shell">
+  <div class="pub-page-head">
+    <div>
+      <h1>Dashboard Monitoring Evaluasi Kinerja dan Anggaran</h1>
+      <p>Kementerian Kesehatan RI · Biro Perencanaan dan Anggaran</p>
+    </div>
+    <div><span class="pub-source">Terakhir diperbarui: <strong>8 Nov 2026 10:24</strong> WIB</span></div>
+  </div>
+
+  <div class="pub-filter-grid">
+    <div class="pub-filter-card"><label class="pub-filter-label">Tahun</label><select class="pub-select"><option>2026</option><option>2025</option></select></div>
+    <div class="pub-filter-card"><label class="pub-filter-label">Triwulan</label><select class="pub-select"><option>TW terakhir (otomatis)</option><option>TW I</option><option>TW II</option><option>TW III</option><option>TW IV</option></select></div>
+    <div class="pub-filter-card"><span class="pub-filter-label">Terakhir diperbarui</span><span class="pub-filter-static">8 Nov 2026 10:24</span></div>
+    <div class="pub-filter-card is-info"><svg><use href="#i-info"></use></svg><span>Klik Unit Utama untuk membuka level Satker/UPT dan melihat indikatornya.</span></div>
+  </div>
+
+  <div class="pub-kpis">
+    <div class="pub-kpi"><div class="pub-kpi-top"><span class="pub-kpi-label">Total Indikator</span><span class="pub-kpi-icon"><svg><use href="#i-chart"></use></svg></span></div><div class="pub-kpi-value">42</div><div class="pub-kpi-sub">indikator kinerja tahun berjalan</div></div>
+    <div class="pub-kpi is-green"><div class="pub-kpi-top"><span class="pub-kpi-label">Indikator Terukur</span><span class="pub-kpi-icon"><svg><use href="#i-check"></use></svg></span></div><div class="pub-kpi-value">38</div><div class="pub-kpi-sub">sudah memiliki capaian</div></div>
+    <div class="pub-kpi is-lime"><div class="pub-kpi-top"><span class="pub-kpi-label">Rata-rata Capaian</span><span class="pub-kpi-icon"><svg><use href="#i-target"></use></svg></span></div><div class="pub-kpi-value">86,2%</div><div class="pub-kpi-sub">periode terakhir</div></div>
+    <div class="pub-kpi is-amber"><div class="pub-kpi-top"><span class="pub-kpi-label">Realisasi Anggaran</span><span class="pub-kpi-icon"><svg><use href="#i-wallet"></use></svg></span></div><div class="pub-kpi-value">Rp 36,4 M</div><div class="pub-kpi-sub">dari total pagu</div></div>
+  </div>
+
+  <section class="pub-card">
+    <div class="pub-card-head">
+      <div class="pub-card-title-wrap"><span class="pub-sec-no">1</span><div><h2 class="pub-card-title">Capaian Indikator per Unit Utama</h2><p class="pub-card-sub">Triwulan terakhir · klik unit untuk turun ke Satker/UPT</p></div></div>
+      <div class="pub-card-actions"><span class="pub-status is-proc">Rata-rata capaian</span></div>
+    </div>
+    <div class="pub-card-body">
+      <div class="pub-table-wrap">
+        <table class="pub-table">
+          <thead><tr><th>Unit Utama</th><th class="is-num">Indikator</th><th>Capaian</th><th class="is-num">Nilai</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Sekretariat Jenderal</td><td class="is-num">8</td><td><span class="pub-bar"><span class="pub-bar-fill is-good" style="width:92%"></span></span></td><td class="is-num">92,1%</td><td><span class="pub-status is-ach">Tercapai</span></td></tr>
+            <tr><td>Ditjen Kesehatan Primer dan Komunitas</td><td class="is-num">10</td><td><span class="pub-bar"><span class="pub-bar-fill is-mid" style="width:88%"></span></span></td><td class="is-num">88,4%</td><td><span class="pub-status is-proc">Dalam Proses</span></td></tr>
+            <tr><td>Ditjen Penanggulangan Penyakit</td><td class="is-num">9</td><td><span class="pub-bar"><span class="pub-bar-fill is-mid" style="width:81%"></span></span></td><td class="is-num">81,0%</td><td><span class="pub-status is-proc">Dalam Proses</span></td></tr>
+            <tr><td>Ditjen Farmalkes</td><td class="is-num">7</td><td><span class="pub-bar"><span class="pub-bar-fill is-warn" style="width:65%"></span></span></td><td class="is-num">64,8%</td><td><span class="pub-status is-miss">Belum Tercapai</span></td></tr>
+            <tr><td>UPT &amp; Lainnya</td><td class="is-num">8</td><td><span class="pub-bar"><span class="pub-bar-fill is-empty" style="width:0"></span></span></td><td class="is-num">—</td><td><span class="pub-status is-empty">Belum Diukur</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pub-card">
+    <div class="pub-card-head">
+      <div class="pub-card-title-wrap"><span class="pub-sec-no">2</span><div><h2 class="pub-card-title">Pagu Anggaran dan Realisasi per Unit Utama</h2><p class="pub-card-sub">Diselaraskan dengan Biro Keuangan</p></div></div>
+      <div class="pub-card-actions"><a class="pub-btn" href="renggar-anggaran.html"><svg><use href="#i-wallet"></use></svg> Lihat Monitoring Anggaran</a></div>
+    </div>
+    <div class="pub-card-body">
+      <div class="pub-kpis">
+        <div class="pub-kpi is-green"><div class="pub-kpi-top"><span class="pub-kpi-label">Total Pagu</span><span class="pub-kpi-icon"><svg><use href="#i-wallet"></use></svg></span></div><div class="pub-kpi-value">Rp 46,6 M</div></div>
+        <div class="pub-kpi is-green"><div class="pub-kpi-top"><span class="pub-kpi-label">Total Realisasi</span><span class="pub-kpi-icon"><svg><use href="#i-check"></use></svg></span></div><div class="pub-kpi-value">Rp 36,4 M</div></div>
+        <div class="pub-kpi is-lime"><div class="pub-kpi-top"><span class="pub-kpi-label">% Realisasi</span><span class="pub-kpi-icon"><svg><use href="#i-target"></use></svg></span></div><div class="pub-kpi-value">78,1%</div></div>
+        <div class="pub-kpi is-amber"><div class="pub-kpi-top"><span class="pub-kpi-label">Sisa Anggaran</span><span class="pub-kpi-icon"><svg><use href="#i-chart"></use></svg></span></div><div class="pub-kpi-value">Rp 10,2 M</div></div>
+      </div>
+      <div class="pub-table-wrap" style="margin-top:1rem">
+        <table class="pub-table">
+          <thead><tr><th>Unit Utama</th><th class="is-num">Pagu</th><th class="is-num">Realisasi</th><th class="is-num">%</th><th class="is-num">Sisa</th></tr></thead>
+          <tbody>
+            <tr class="pub-parent-row"><td>Sekretariat Jenderal</td><td class="is-num">Rp 12,4 M</td><td class="is-num">Rp 8,1 M</td><td class="is-num">65,3%</td><td class="is-num">Rp 4,3 M</td></tr>
+            <tr><td>Ditjen Kesehatan Primer dan Komunitas</td><td class="is-num">Rp 24,9 M</td><td class="is-num">Rp 24,2 M</td><td class="is-num">97,2%</td><td class="is-num">Rp 0,7 M</td></tr>
+            <tr><td>Ditjen Farmalkes</td><td class="is-num">Rp 9,3 M</td><td class="is-num">Rp 4,1 M</td><td class="is-num">44,1%</td><td class="is-num">Rp 5,2 M</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pub-footnote"><svg><use href="#i-info"></use></svg><span>Sumber: e-Monev/Biro Keuangan. Angka disajikan sebagai agregat unit.</span></div>
+    </div>
+  </section>
+
+  <section class="pub-card">
+    <div class="pub-card-head">
+      <div class="pub-card-title-wrap"><span class="pub-sec-no">3</span><div><h2 class="pub-card-title">Nilai SAKIP dan On Going per Unit Utama</h2><p class="pub-card-sub">Klik untuk turun ke Satker/UPT</p></div></div>
+    </div>
+    <div class="pub-card-body">
+      <div class="pub-table-wrap">
+        <table class="pub-table">
+          <thead><tr><th>Unit Utama</th><th class="is-num">Nilai SAKIP</th><th>Predikat</th><th class="is-num">On Going</th></tr></thead>
+          <tbody>
+            <tr><td>Sekretariat Jenderal</td><td class="is-num">87,50</td><td><span class="pub-status is-ach">A</span></td><td class="is-num">—</td></tr>
+            <tr><td>Ditjen Kesehatan Primer dan Komunitas</td><td class="is-num">84,10</td><td><span class="pub-status is-proc">B</span></td><td class="is-num">—</td></tr>
+            <tr><td>Ditjen Farmalkes</td><td class="is-num">79,30</td><td><span class="pub-status is-proc">B</span></td><td class="is-num">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pub-card">
+    <div class="pub-card-head">
+      <div class="pub-card-title-wrap"><span class="pub-sec-no">4</span><div><h2 class="pub-card-title">Rekap Capaian menurut Indikator</h2><p class="pub-card-sub">Matriks capaian per triwulan · data agregat unit kerja</p></div></div>
+      <div class="pub-card-actions">
+        <div class="pub-tabs"><button class="pub-tab is-active" type="button">Per Indikator</button><button class="pub-tab" type="button">Per Eselon I</button></div>
+        <input class="pub-search" type="search" placeholder="Cari indikator / unit…">
+        <button class="pub-btn" type="button"><svg><use href="#i-download"></use></svg> Unduh Excel</button>
+        <button class="pub-btn" type="button"><svg><use href="#i-print"></use></svg> Unduh PDF</button>
+      </div>
+    </div>
+    <div class="pub-card-body">
+      <div class="pub-table-wrap">
+        <table class="pub-table">
+          <thead><tr><th>Kode</th><th>Indikator</th><th>Satuan</th><th class="is-num">Target</th><th class="is-num">TW II</th><th>Unit</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>IKD-01</td><td>Persentase puskesmas terakreditasi</td><td>%</td><td class="is-num">100</td><td class="is-num">92,0</td><td>Sekretariat Jenderal</td><td><span class="pub-status is-ach">Tercapai</span></td></tr>
+            <tr><td>IKD-02</td><td>Persentase kabupaten/kota dengan surveilans aktif</td><td>%</td><td class="is-num">95</td><td class="is-num">88,4</td><td>Ditjen P2P</td><td><span class="pub-status is-proc">Dalam Proses</span></td></tr>
+            <tr><td>IKD-03</td><td>Jumlah fasilitas farmasi tersertifikasi</td><td>unit</td><td class="is-num">120</td><td class="is-num">78,0</td><td>Ditjen Farmalkes</td><td><span class="pub-status is-miss">Belum Tercapai</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pub-footer">
+  <span><strong>Biro Perencanaan dan Anggaran</strong> · Tim Monev 1</span>
+  <span>Sumber data: e-Performance, e-Monev, dan Biro Keuangan · Data agregat tanpa informasi pribadi</span>
+  <span>Contoh statis dengan data dummy · bootstrap-kemenkes-theme (unofficial)</span>
+</footer>
+</body>
+</html>

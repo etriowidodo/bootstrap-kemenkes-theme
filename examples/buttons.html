@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buttons — bootstrap-kemenkes-theme</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo-kemenkes/favicon-32.png?v=3">
+  <link rel="icon" type="image/png" sizes="256x256" href="../assets/logo-kemenkes/favicon-256.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo-kemenkes/favicon-180.png?v=3">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../dist/bootstrap-kemenkes.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+<nav class="navbar navbar-expand-lg kmk-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../assets/logo-kemenkes/logo-horizontal-color-trim.png" alt="Kementerian Kesehatan" style="height:40px;width:auto">
+      <span class="kmk-brand-divider"></span>
+      <span class="kmk-brand-text"><strong>Kemenkes Theme</strong><small>Bootstrap 5 · Kementerian Kesehatan RI</small></span>
+    </a>
+    <span class="kmk-public-badge d-none d-lg-inline-flex">Unofficial · MIT</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kmknav" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="kmknav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="showcase.html">Contoh</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Komponen</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="components.html">Kitchen Sink</a></li>
+            <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+            <li><a class="dropdown-item" href="cards-icons.html">Card + Ikon</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="data-table.html">Data Table</a></li>
+            <li><a class="dropdown-item" href="wizard.html">Form Wizard</a></li>
+            <li><a class="dropdown-item" href="charts.html">Chart</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Panduan</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="font-picker.html">Font Picker</a></li>
+            <li><a class="dropdown-item" href="logo.html">Logo &amp; Supergrafis</a></li>
+            <li><a class="dropdown-item" href="icons.html">Ikon</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="py-4 bg-kmk-soft">
+  <div class="container"><h1 class="h3 mb-1">Buttons</h1><p class="mb-0 text-kmk-gray">Tombol solid, outline, soft, ukuran, ikon, dan group — semua warna dari base palette.</p></div>
+</header>
+<main id="main" class="container py-4">
+
+  <h2 class="h5 mb-3">Solid</h2>
+  <div class="d-flex flex-wrap gap-2 mb-4"><button class="kmk-btn kmk-c-teal">Teal</button><button class="kmk-btn kmk-c-cyan">Cyan</button><button class="kmk-btn kmk-c-dark">Teal gelap</button><button class="kmk-btn kmk-c-deep">Teal deep</button><button class="kmk-btn kmk-c-light">Hijau</button><button class="kmk-btn kmk-c-leaf">Hijau daun</button><button class="kmk-btn kmk-c-lime">Lime</button><button class="kmk-btn kmk-c-olive">Olive</button><button class="kmk-btn kmk-c-orange">Oranye</button><button class="kmk-btn kmk-c-red">Merah</button><button class="kmk-btn kmk-c-gray">Abu</button><button class="kmk-btn kmk-c-graysoft">Abu soft</button></div>
+
+  <h2 class="h5 mb-3">Outline</h2>
+  <div class="d-flex flex-wrap gap-2 mb-4"><button class="kmk-btn kmk-btn-outline kmk-c-teal">Teal</button><button class="kmk-btn kmk-btn-outline kmk-c-cyan">Cyan</button><button class="kmk-btn kmk-btn-outline kmk-c-dark">Teal gelap</button><button class="kmk-btn kmk-btn-outline kmk-c-deep">Teal deep</button><button class="kmk-btn kmk-btn-outline kmk-c-light">Hijau</button><button class="kmk-btn kmk-btn-outline kmk-c-leaf">Hijau daun</button><button class="kmk-btn kmk-btn-outline kmk-c-lime">Lime</button><button class="kmk-btn kmk-btn-outline kmk-c-olive">Olive</button><button class="kmk-btn kmk-btn-outline kmk-c-orange">Oranye</button><button class="kmk-btn kmk-btn-outline kmk-c-red">Merah</button><button class="kmk-btn kmk-btn-outline kmk-c-gray">Abu</button><button class="kmk-btn kmk-btn-outline kmk-c-graysoft">Abu soft</button></div>
+
+  <h2 class="h5 mb-3">Soft</h2>
+  <div class="d-flex flex-wrap gap-2 mb-4"><button class="kmk-btn kmk-btn-soft kmk-c-teal">Teal</button><button class="kmk-btn kmk-btn-soft kmk-c-cyan">Cyan</button><button class="kmk-btn kmk-btn-soft kmk-c-dark">Teal gelap</button><button class="kmk-btn kmk-btn-soft kmk-c-deep">Teal deep</button><button class="kmk-btn kmk-btn-soft kmk-c-light">Hijau</button><button class="kmk-btn kmk-btn-soft kmk-c-leaf">Hijau daun</button><button class="kmk-btn kmk-btn-soft kmk-c-lime">Lime</button><button class="kmk-btn kmk-btn-soft kmk-c-olive">Olive</button><button class="kmk-btn kmk-btn-soft kmk-c-orange">Oranye</button><button class="kmk-btn kmk-btn-soft kmk-c-red">Merah</button><button class="kmk-btn kmk-btn-soft kmk-c-gray">Abu</button><button class="kmk-btn kmk-btn-soft kmk-c-graysoft">Abu soft</button></div>
+
+  <h2 class="h5 mb-3">Ukuran &amp; bentuk</h2>
+  <div class="card p-3 mb-4">
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <button class="kmk-btn kmk-btn-sm kmk-c-teal">Small</button>
+      <button class="kmk-btn kmk-c-teal">Default</button>
+      <button class="kmk-btn kmk-btn-lg kmk-c-teal">Large</button>
+      <button class="kmk-btn kmk-btn-pill kmk-c-dark">Pill</button>
+      <button class="kmk-btn kmk-c-teal" disabled>Disabled</button>
+      <button class="kmk-btn kmk-btn-icon kmk-c-teal" aria-label="Tambah">+</button>
+      <button class="kmk-btn kmk-c-dark" disabled><span class="spinner-border spinner-border-sm"></span> Memuat…</button>
+    </div>
+    <button class="kmk-btn kmk-btn-block kmk-c-teal">Block button</button>
+  </div>
+
+  <h2 class="h5 mb-3">Dengan ikon</h2>
+  <div class="d-flex flex-wrap gap-2 mb-4">
+    <button class="kmk-btn kmk-c-teal"><img src="../assets/icons-white/icon_s2_59.png" alt=""> Dashboard</button>
+    <button class="kmk-btn kmk-btn-outline kmk-c-orange"><img src="../assets/icons/icon_s2_55.png" alt=""> Anggaran</button>
+    <button class="kmk-btn kmk-c-dark"><img src="../assets/icons-white/icon_s2_20.png" alt=""> Capaian</button>
+    <button class="kmk-btn kmk-btn-soft kmk-c-leaf"><img src="../assets/icons/icon_s2_30.png" alt=""> Verifikasi</button>
+    <button class="kmk-btn kmk-btn-icon kmk-c-red" aria-label="Hapus"><img src="../assets/icons-white/icon_s2_13.png" alt=""></button>
+  </div>
+
+  <h2 class="h5 mb-3">Group</h2>
+  <div class="card p-3 mb-4">
+    <div class="btn-group mb-3">
+      <button class="btn btn-outline-primary">Kiri</button>
+      <button class="btn btn-outline-primary">Tengah</button>
+      <button class="btn btn-outline-primary">Kanan</button>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <div class="btn-group"><button class="btn btn-primary">Simpan</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Simpan &amp; tutup</a></li><li><a class="dropdown-item" href="#">Simpan sebagai draft</a></li></ul></div>
+      <button class="btn btn-outline-primary" data-kmk-toast="Aksi dijalankan">Toast</button>
+    </div>
+  </div>
+
+  <h2 class="h5 mb-3">Base color</h2>
+  <div class="d-flex flex-wrap gap-2 mb-3"><span class="kmk-chip"><span class="kmk-dot kmk-c-teal"></span>Teal</span><span class="kmk-chip"><span class="kmk-dot kmk-c-cyan"></span>Cyan</span><span class="kmk-chip"><span class="kmk-dot kmk-c-dark"></span>Teal gelap</span><span class="kmk-chip"><span class="kmk-dot kmk-c-deep"></span>Teal deep</span><span class="kmk-chip"><span class="kmk-dot kmk-c-light"></span>Hijau</span><span class="kmk-chip"><span class="kmk-dot kmk-c-leaf"></span>Hijau daun</span><span class="kmk-chip"><span class="kmk-dot kmk-c-lime"></span>Lime</span><span class="kmk-chip"><span class="kmk-dot kmk-c-olive"></span>Olive</span><span class="kmk-chip"><span class="kmk-dot kmk-c-orange"></span>Oranye</span><span class="kmk-chip"><span class="kmk-dot kmk-c-red"></span>Merah</span><span class="kmk-chip"><span class="kmk-dot kmk-c-gray"></span>Abu</span><span class="kmk-chip"><span class="kmk-dot kmk-c-graysoft"></span>Abu soft</span></div>
+
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">Markup <button class="btn btn-sm btn-outline-primary" data-kmk-copy-snippet>Salin</button></div>
+    <div class="card-body p-0 kmk-snippet">
+      <pre class="kmk-code m-0">&lt;button class="kmk-btn kmk-c-teal"&gt;Solid&lt;/button&gt;
+&lt;button class="kmk-btn kmk-btn-outline kmk-c-orange"&gt;Outline&lt;/button&gt;
+&lt;button class="kmk-btn kmk-btn-soft kmk-c-leaf"&gt;Soft&lt;/button&gt;
+&lt;button class="kmk-btn kmk-btn-sm kmk-c-dark"&gt;Small&lt;/button&gt;</pre>
+    </div>
+  </div>
+</main>
+<footer class="kmk-footer py-4 mt-4"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>bootstrap-kemenkes-theme — unofficial</span><span>Buttons, warna dari base palette</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-kemenkes.js"></script>
+</body>
+</html>
