@@ -26,6 +26,7 @@ jobs:
         run: |
           mkdir -p _site
           cp -R examples dist assets js favicon.ico _site/
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=examples/index.html"><title>Demo</title><a href="examples/index.html">Buka demo</a>\n' > _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
